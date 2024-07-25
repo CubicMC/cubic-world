@@ -1,5 +1,11 @@
 # Test files documentation
 
+## How to download the test files
+
+```sh
+./download_test_files.sh
+```
+
 ## How to generate worlds for testing
 
 Mods:
