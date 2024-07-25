@@ -9,7 +9,6 @@ Mods:
 Settings:
  - 8 chunks render distance & simulation distance
  - Seed: cubic
- - Default chunk gen
 
 Commands:
 ```

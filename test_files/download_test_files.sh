@@ -2,7 +2,12 @@
 
 set -xe
 
-curl https://cdn.cubicmc.org/world/tests_files/default_1_21.tar.gz -o default_1_21.tar.gz
-sha512sum -c default_1_21.tar.gz.sha512
-tar xf default_1_21.tar.gz
-rm default_1_21.tar.gz
+for file in *.sha512; do
+    final_file="${file%.*}"
+    url="https://cdn.cubicmc.org/world/tests_files/$final_file"
+
+    curl $url -o $final_file
+    sha512sum -c $file
+    tar xf $final_file
+    rm $final_file
+done
