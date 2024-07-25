@@ -1,0 +1,6 @@
+*
+!.gitignore
+!*.tar.gz
+!README.md
+!*.sha512
+!*.sh

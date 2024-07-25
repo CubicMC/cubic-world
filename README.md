@@ -38,13 +38,14 @@ optimization reasons. See the gcc c++17 feature matrix
 [here](https://gcc.gnu.org/projects/cxx-status.html#cxx17).
 
 ### How to build
+
 #### Build from source on your machine
+
 To build follow those steps :
 ```bash
 git clone https://github.com/CubicMC/cubic-world
 cd cubic-world
-# Currently doesn't work as the project hasn't been started yet
-make -j `nproc --exclude 1` # The -j option is here to speed-up the compilation
+make
 ```
 
 ## TODO for this README
